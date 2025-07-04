@@ -23,14 +23,22 @@ while True:
         print("Escolha a posição que desenha inserir")
         linha = int(input("Insira a linha que deseja inserir\n"))
         coluna = int(input("Insira a coluna que deseja inserir\n"))
-        matrizJogo[linha][coluna] = "X"
+        if matrizJogo[linha][coluna] != ".":
+            print("Posição já ocupada!")
+            continue
+        else:
+            matrizJogo[linha][coluna] = "X"
         x += 1
     else:
         print("Vez de O")
         print("Escolha a posição que desenha inserir")
         linha = int(input("Insira a linha que deseja inserir\n"))
         coluna = int(input("Insira a coluna que deseja inserir\n"))
-        matrizJogo[linha][coluna] = "O"
+        if matrizJogo[linha][coluna] != ".":
+            print("Posição já ocupada!")
+            continue
+        else:
+            matrizJogo[linha][coluna] = "O"
         x = 0
 
     
