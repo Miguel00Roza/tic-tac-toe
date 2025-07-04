@@ -48,10 +48,10 @@ while True:
         print(f"Vencedor: {matrizJogo[0][0]}")
         break
     if matrizJogo[1][0] == matrizJogo[1][1] == matrizJogo[1][2] != ".":
-        print(f"Vencedor: {matrizJogo[0][0]}")
+        print(f"Vencedor: {matrizJogo[1][0]}")
         break
     if matrizJogo[2][0] == matrizJogo[2][1] == matrizJogo[2][2] != ".":
-        print(f"Vencedor: {matrizJogo[0][0]}")
+        print(f"Vencedor: {matrizJogo[2][0]}")
         break
     
     #linhas verticais
